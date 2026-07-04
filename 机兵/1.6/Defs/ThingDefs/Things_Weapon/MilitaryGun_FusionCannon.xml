@@ -215,7 +215,9 @@
 		</statBases>
 		<weaponTags>
 			<li>DMS_FusionCannon</li>
-			<li>DMS_DragoonGun</li>
+			<li>NoSwitch</li>
+			<li>DMS_MechWeaponUltraHeavy</li>
+			<li>DMS_MechWeaponTankGun</li>
 		</weaponTags>
 		<recipeMaker>
 			<researchPrerequisites>
