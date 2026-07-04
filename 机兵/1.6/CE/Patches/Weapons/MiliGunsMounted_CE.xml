@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--===== 這些槍械是無法被製造的，只會在固定武裝的機械體上生成
+=====-->
+<Patch>
+    <Operation Class="PatchOperationSequence">
+        <operations>
+            <!--===== Mounted LMG =====-->
+            <li Class="CombatExtended.PatchOperationMakeGunCECompatible">
+                <defName>DMS_FusionMachineGun</defName>
+                <statBases>
+                    <Mass>12.75</Mass>
+                    <Bulk>14.3</Bulk>
+                    <SwayFactor>1.28</SwayFactor>
+                    <ShotSpread>0.05</ShotSpread>
+                    <SightsEfficiency>1</SightsEfficiency>
+                    <RangedWeapon_Cooldown>1</RangedWeapon_Cooldown>
+                </statBases>
+                <Properties>
+                    <recoilAmount>1.24</recoilAmount>
+                    <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+                    <hasStandardCommand>true</hasStandardCommand>
+                    <defaultProjectile>Bullet_338Lapua_FMJ</defaultProjectile>
+                    <burstShotCount>10</burstShotCount>
+                    <ticksBetweenBurstShots>6</ticksBetweenBurstShots>
+                    <warmupTime>1</warmupTime>
+                    <range>55</range>
+                    <soundCast>DMS_MachineGunLight_Shot</soundCast>
+                    <soundCastTail>GunTail_Medium</soundCastTail>
+                    <muzzleFlashScale>9</muzzleFlashScale>
+                    <recoilPattern>Mounted</recoilPattern>
+                </Properties>
+                <!--
+                <AmmoUser>
+                    <magazineSize>300</magazineSize>
+                    <reloadTime>10</reloadTime>
+                    <ammoSet>AmmoSet_338Lapua</ammoSet>
+                </AmmoUser>-->
+                <FireModes>
+                    <!--<aiUseBurstMode>FALSE</aiUseBurstMode>-->
+                    <aiAimMode>SuppressFire</aiAimMode>
+                    <aimedBurstShotCount>10</aimedBurstShotCount>
+                </FireModes>
+                <weaponTags>
+                    <li>CE_AI_LMG</li>
+                    <li>NoSwitch</li>
+                </weaponTags>
+            </li>
+
+            <!--===== Mounted HMG =====-->
+            <li Class="CombatExtended.PatchOperationMakeGunCECompatible">
+                <defName>DMS_TwinFusionHeavyMachineGun</defName>
+                <statBases>
+                    <Mass>39.4</Mass>
+                    <Bulk>25.6</Bulk>
+                    <SwayFactor>1.64</SwayFactor>
+                    <ShotSpread>0.05</ShotSpread>
+                    <SightsEfficiency>1</SightsEfficiency>
+                    <RangedWeapon_Cooldown>2</RangedWeapon_Cooldown>
+                </statBases>
+                <Properties>
+                    <recoilAmount>1.55</recoilAmount>
+                    <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+                    <hasStandardCommand>true</hasStandardCommand>
+                    <defaultProjectile>Bullet_145x114mm_FMJ</defaultProjectile>
+                    <burstShotCount>20</burstShotCount>
+                    <ticksBetweenBurstShots>6</ticksBetweenBurstShots>
+                    <warmupTime>2</warmupTime>
+                    <range>75</range>
+                    <soundCast>DMS_MachineGunHeavy_Shot</soundCast>
+                    <soundCastTail>GunTail_Medium</soundCastTail>
+                    <muzzleFlashScale>16</muzzleFlashScale>
+                    <recoilPattern>Mounted</recoilPattern>
+                </Properties>
+                <FireModes>
+                    <aiAimMode>SuppressFire</aiAimMode>
+                    <aimedBurstShotCount>5</aimedBurstShotCount>
+                </FireModes>
+                <weaponTags>
+                    <li>CE_AI_Suppressive</li>
+                    <li>NoSwitch</li>
+                </weaponTags>
+            </li>
+
+        </operations>
+    </Operation>
+</Patch>

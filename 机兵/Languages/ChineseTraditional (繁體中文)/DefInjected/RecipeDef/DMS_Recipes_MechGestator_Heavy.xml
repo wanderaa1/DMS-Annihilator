@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Gestate Annihilator -->
+  <DMS_Make_Annihilator.label>組裝湮滅</DMS_Make_Annihilator.label>
+  <!-- EN: Gestate a Annihilator Automatroid. -->
+  <DMS_Make_Annihilator.description>組裝湮滅</DMS_Make_Annihilator.description>
+  <!-- EN: Gestating mech. -->
+  <DMS_Make_Annihilator.jobString>組裝機械體中</DMS_Make_Annihilator.jobString>
+  
+</LanguageData>

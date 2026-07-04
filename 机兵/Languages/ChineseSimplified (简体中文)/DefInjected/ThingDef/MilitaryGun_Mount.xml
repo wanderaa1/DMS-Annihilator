@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Heavy Fusion Shell -->
+  <Bullet_DMST_HeavyFusionShell.label>重型聚变弹</Bullet_DMST_HeavyFusionShell.label>
+  
+  <!-- EN: Light Fusion Shell -->
+  <Bullet_DMST_LightFusionShell.label>轻型聚变弹</Bullet_DMST_LightFusionShell.label>
+  
+  <!-- EN: Fusion Machine Gun -->
+  <DMS_FusionMachineGun.label>聚变机枪</DMS_FusionMachineGun.label>
+  <!-- EN: A high-rate-of-fire machine gun, effective for suppressive fire and eliminating infantry-class threats. -->
+  <DMS_FusionMachineGun.description>高射速机枪，能够对步兵级别目标进行火力压制，杀伤</DMS_FusionMachineGun.description>
+  <!-- EN: Fusion Machine Gun -->
+  <DMS_FusionMachineGun.verbs.Verb_Shoot.label>聚变机枪</DMS_FusionMachineGun.verbs.Verb_Shoot.label>
+  
+  <!-- EN: Twin Fusion Heavy Machine Gun -->
+  <DMS_TwinFusionHeavyMachineGun.label>双管聚变重机枪</DMS_TwinFusionHeavyMachineGun.label>
+  <!-- EN: A twin-barreled heavy machine gun, capable of effectively engaging a variety of lightly armored targets. -->
+  <DMS_TwinFusionHeavyMachineGun.description>双管重机枪，能够对各种轻型装甲目标进行有效打击</DMS_TwinFusionHeavyMachineGun.description>
+  <!-- EN: Twin Fusion Heavy Machine Gun -->
+  <DMS_TwinFusionHeavyMachineGun.verbs.Verb_Shoot.label>双管聚变重机枪</DMS_TwinFusionHeavyMachineGun.verbs.Verb_Shoot.label>
+  
+</LanguageData>

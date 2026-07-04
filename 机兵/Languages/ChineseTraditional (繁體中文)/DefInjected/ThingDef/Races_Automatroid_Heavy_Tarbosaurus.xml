@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Annihilator -->
+  <DMS_Mech_Annihilator.label>湮滅</DMS_Mech_Annihilator.label>
+  <!-- EN: A super-heavy Automaton war engine design, featuring a conspicuous red livery and a prominent Automaton insignia. It possesses main battle tank-grade firepower, armor, and mobility, capable of single-handedly eliminating virtually any threat. Standard loadout comprises one main cannon, one coaxial machine gun, and one twin-barreled heavy machine gun. -->
+  <DMS_Mech_Annihilator.description>由自動人形（Automatons）提供的一種超重型機兵設計，帶有顯眼的紅色塗裝與醒目的自動人形標誌，具備主力戰車級別的火力、裝甲與機動性，能夠獨自消滅幾乎所有敵人。預設配置包含一門主砲、一挺同軸機槍與一挺雙管重機槍。</DMS_Mech_Annihilator.description>
+  <!-- EN: Mechanical Head -->
+  <DMS_Mech_Annihilator.tools.Mechanical_Head.label>頭部</DMS_Mech_Annihilator.tools.Mechanical_Head.label>
+  <!-- EN: Left Leg -->
+  <DMS_Mech_Annihilator.tools.Left_Leg.label>左腿</DMS_Mech_Annihilator.tools.Left_Leg.label>
+  <!-- EN: Right Leg -->
+  <DMS_Mech_Annihilator.tools.Right_Leg.label>右腿</DMS_Mech_Annihilator.tools.Right_Leg.label>
+  
+</LanguageData>

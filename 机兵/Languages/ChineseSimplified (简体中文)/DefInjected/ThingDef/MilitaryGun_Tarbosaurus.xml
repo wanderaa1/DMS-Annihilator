@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Fusion Cannon -->
+  <DMS_FusionCannon.label>聚变主炮</DMS_FusionCannon.label>
+  <!-- EN: A main gun that unleashes terrifying destructive power, ideal for engaging fortified structures and heavily armored targets. -->
+  <DMS_FusionCannon.description>能爆发出可怕威力的主炮，适合打击各种坚固工事，重装甲目标。</DMS_FusionCannon.description>
+  <!-- EN: stock -->
+  <DMS_FusionCannon.tools.stock.label>枪管</DMS_FusionCannon.tools.stock.label>
+  <!-- EN: barrel -->
+  <DMS_FusionCannon.tools.barrel.label>枪管</DMS_FusionCannon.tools.barrel.label>
+  <!-- EN: Fusion Cannon -->
+  <DMS_FusionCannon.verbs.Verb_Shoot.label>聚变主炮</DMS_FusionCannon.verbs.Verb_Shoot.label>
+  
+  <!-- EN: DMS Fusion Cannon shot -->
+  <DMS_FusionCannonGun.label>聚变弹</DMS_FusionCannonGun.label>
+
+  <!-- EN: Quad Fusion Autocannon -->
+  <DMS_QuadFusionAutocannon.label>四联聚变机炮</DMS_QuadFusionAutocannon.label>
+  <!-- EN: A quad-barreled, high-velocity fusion autocannon that unleashes devastating barrages to suppress and dismantle enemy formations. Exceptionally lethal against heavy infantry and light vehicles. -->
+  <DMS_QuadFusionAutocannon.description>设计用来防空的聚变机炮，也能用惊人的射速对各种地面目标进行打击</DMS_QuadFusionAutocannon.description>
+  <!-- EN: Quad Fusion Autocannon -->
+  <DMS_QuadFusionAutocannon.verbs.Verb_Shoot.label>四联聚变机炮</DMS_QuadFusionAutocannon.verbs.Verb_Shoot.label>
+
+  <!-- EN: Quad Fusion Autocannon bullet -->
+  <Bullet_DMS_QuadFusionAutocannonGun.label>聚变机炮弹</Bullet_DMS_QuadFusionAutocannonGun.label>
+
+  <!-- EN: Compact Heavy Rocket Multi-Launcher -->
+  <DMS_CompactHeavyRocketMulti-Launcher.label>轻量化重型火箭多管发射器</DMS_CompactHeavyRocketMulti-Launcher.label>
+  <!-- EN: A size-optimized multi-launcher that fires high-yield heavy rockets. Watch out for friendly fire. -->
+  <DMS_CompactHeavyRocketMulti-Launcher.description>优化了整体大小的多管发射器，能发射当量巨大的重型火箭，小心别炸到自己人</DMS_CompactHeavyRocketMulti-Launcher.description>
+  <!-- EN: Compact Heavy Rocket Multi-Launcher -->
+  <DMS_CompactHeavyRocketMulti-Launcher.verbs.Verb_Shoot.label>轻量化重型火箭多管发射器</DMS_CompactHeavyRocketMulti-Launcher.verbs.Verb_Shoot.label>
+
+  <!-- EN: Rocket Multi-Launcher -->
+  <DMS_Bullet_RocketMultiLauncher.label>重型火箭弹</DMS_Bullet_RocketMultiLauncher.label>
+
+</LanguageData>

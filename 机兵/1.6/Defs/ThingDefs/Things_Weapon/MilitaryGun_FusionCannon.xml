@@ -1,0 +1,289 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!--====聚变主炮====-->
+    <ThingDef ParentName="DMS_AutomatroidHeavyGun" Abstract="False">
+        <defName>DMS_FusionCannon</defName>
+        <label>Fusion Cannon</label>
+		<description>A main gun that unleashes terrifying destructive power, ideal for engaging fortified structures and heavily armored targets.</description>
+		<weaponTags>
+			<li>DMS_FusionCannon</li>
+			<li>NoSwitch</li>
+			<li>DMS_MechWeaponUltraHeavy</li>
+			<li>DMS_MechWeaponTankGun</li>
+		</weaponTags>
+		<graphicData>
+			<texPath>Things/Weapons/DMS_tank1</texPath>
+			<drawSize>3</drawSize>
+		</graphicData>
+		<statBases>
+			<Mass>265</Mass>
+			<WorkToMake>120000</WorkToMake>
+			<AccuracyTouch>0.89</AccuracyTouch>
+			<AccuracyShort>1.00</AccuracyShort>
+			<AccuracyMedium>1.00</AccuracyMedium>
+			<AccuracyLong>0.99</AccuracyLong>
+			<RangedWeapon_Cooldown>3</RangedWeapon_Cooldown>
+		</statBases>
+		<recipeMaker>
+			<skillRequirements>
+				<Crafting>12</Crafting>
+			</skillRequirements>
+			<researchPrerequisites>
+				<li>DMS_EquipmentHeavy</li>
+				<li>MultibarrelWeapons</li>
+			</researchPrerequisites>
+		</recipeMaker>
+		<costList>
+			<Tungsteel>275</Tungsteel>
+			<ComponentStamped>30</ComponentStamped>
+		</costList>
+		<comps Inherit="False">
+			<li>
+				<compClass>CompEquippable</compClass>
+			</li>
+			<li Class="CompProperties_Forbiddable" />
+			<li Class="CompProperties_Styleable" />
+		</comps>
+		<verbs>
+			<li>
+				<hasStandardCommand>true</hasStandardCommand>
+				<verbClass>Verb_Shoot</verbClass>
+                <defaultProjectile>DMS_FusionCannonGun</defaultProjectile>
+				<requireLineOfSight>true</requireLineOfSight>
+				<warmupTime>3</warmupTime>
+				<minRange>7</minRange>
+				<range>45.9</range>
+				<ai_AvoidFriendlyFireRadius>6.9</ai_AvoidFriendlyFireRadius>
+				<burstShotCount>1</burstShotCount>
+				<soundCast>Shot_HellsphereCannonGun</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>30</muzzleFlashScale>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+			</li>
+		</verbs>
+		<modExtensions>
+			<li Class="MuzzleFlash.MuzzleFlashProps" MayRequire="IssacZhuang.MuzzleFlash">
+				<def>MF_StandardMuzzleFalsh</def>
+				<drawSize>(5,5)</drawSize>
+				<offsets>
+					<li>(2.1,0)</li>
+				</offsets>
+				<isAlternately>true</isAlternately>
+			</li>
+			<li Class="Fortified.HeavyEquippableExtension">
+				<EquippableDef>UltraHeavyAutomatroid</EquippableDef>
+			</li>
+		</modExtensions>
+	</ThingDef>
+
+
+  <ThingDef ParentName="BaseBullet">
+    <defName>DMS_FusionCannonGun</defName>
+    <label>DMS Fusion Cannon shot</label>
+    <thingClass>Projectile_HellsphereCannon</thingClass>
+    <graphicData>
+      <texPath>Things/Weapons/DMS_tank1d</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>MoteGlow</shaderType>
+      <drawSize>(4,4)</drawSize>
+    </graphicData>
+    <projectile>
+      <damageDef>Vaporize</damageDef>
+	  <damageAmountBase>200</damageAmountBase>
+      <speed>75</speed>
+      <explosionRadius>4.9</explosionRadius>
+      <screenShakeFactor>1.5</screenShakeFactor>
+      <filth>Filth_BlastMark</filth>
+      <filthCount>1</filthCount>
+      <explosionSpawnsSingleFilth>true</explosionSpawnsSingleFilth>
+    </projectile>
+  </ThingDef>
+  
+  
+  	<!--===多管机炮====-->
+  	<ThingDef ParentName="DMS_AutomatroidHeavyGun">
+		<defName>DMS_QuadFusionAutocannon</defName>
+		<label>Quad Fusion Autocannon</label>
+		<description>A quad-barreled, high-velocity fusion autocannon that unleashes devastating barrages to suppress and dismantle enemy formations. Exceptionally lethal against heavy infantry and light vehicles.</description>
+		<graphicData>
+			<texPath>Things/Weapons/DMS_tank4</texPath>
+			<drawSize>3</drawSize>
+		</graphicData>
+		<weaponClasses>
+			<li>RangedHeavy</li>
+			<li>LongShots</li>
+			<li>Ranged</li>
+		</weaponClasses>
+		<weaponTags>
+			<li>DMS_FusionCannon</li>
+			<li>DMS_MechWeaponHeavy</li>
+			<li>A_SuppressWeaponHeavy</li>
+			<li>DMS_VehicleWeapon</li>
+		</weaponTags>
+		<soundInteract>Interact_Rifle</soundInteract>
+		<statBases>
+			<WorkToMake>90000</WorkToMake>
+			<AccuracyTouch>0.80</AccuracyTouch>
+			<AccuracyShort>0.85</AccuracyShort>
+			<AccuracyMedium>0.88</AccuracyMedium>
+			<AccuracyLong>0.88</AccuracyLong>
+			<Mass>130</Mass>
+			<RangedWeapon_Cooldown>0.5</RangedWeapon_Cooldown>
+		</statBases>
+		<equippedStatOffsets>
+			<MoveSpeed>-0.2</MoveSpeed>
+		</equippedStatOffsets>
+		<recipeMaker>
+			<researchPrerequisites>
+				<li>DMS_EquipmentHeavy</li>
+				<li>HeavyTurrets</li>
+			</researchPrerequisites>
+		</recipeMaker>
+		<costList>
+			<Tungsteel>230</Tungsteel>
+			<ComponentStamped>14</ComponentStamped>
+		</costList>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_DMS_QuadFusionAutocannonGun</defaultProjectile>
+				<warmupTime>0.25</warmupTime>
+				<minRange>2.9</minRange>
+				<range>49.9</range>
+				<ticksBetweenBurstShots>4</ticksBetweenBurstShots>
+				<burstShotCount>4</burstShotCount>
+				<soundCast>DMS_Shot_Bushmaster</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>22</muzzleFlashScale>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+			</li>
+		</verbs>
+		<modExtensions>
+			<li Class="MuzzleFlash.MuzzleFlashProps" MayRequire="IssacZhuang.MuzzleFlash">
+				<def>MF_StandardMuzzleFalsh</def>
+				<drawSize>(1.5,1.4)</drawSize>
+				<offsets>
+					<li>(1.2,0)</li>
+				</offsets>
+				<isAlternately>true</isAlternately>
+			</li>
+			<li Class="Fortified.HeavyEquippableExtension">
+				<EquippableDef>HeavyAutomatroid</EquippableDef>
+			</li>
+		</modExtensions>
+	</ThingDef>
+	
+	<ThingDef ParentName="BaseBullet">
+		<defName>Bullet_DMS_QuadFusionAutocannonGun</defName>
+		<label>Quad Fusion Autocannon bullet</label>
+		<graphicData>
+			<texPath>Things/Weapons/DMS_tank4d</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(2,2)</drawSize>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>30</damageAmountBase>
+			<armorPenetrationBase>0.5</armorPenetrationBase>
+			<stoppingPower>5</stoppingPower>
+			<speed>80</speed>
+		</projectile>
+	</ThingDef>
+	
+	  	<!--===火箭发射器====-->
+	<ThingDef ParentName="DMS_AutomatroidHeavyGun">
+		<defName>DMS_CompactHeavyRocketMulti-Launcher</defName>
+		<label>Compact Heavy Rocket Multi-Launcher</label>
+		<description>A size-optimized multi-launcher that fires high-yield heavy rockets. Watch out for friendly fire.</description>
+		<uiIconScale>0.4</uiIconScale>
+		<graphicData>
+			<texPath>Things/Weapons/DMS_tank5</texPath>
+			<drawSize>2.5</drawSize>
+		</graphicData>
+		<statBases>
+			<AccuracyTouch>0.6</AccuracyTouch>
+			<AccuracyShort>0.6</AccuracyShort>
+			<AccuracyMedium>0.6</AccuracyMedium>
+			<AccuracyLong>0.6</AccuracyLong>
+			<RangedWeapon_Cooldown>6</RangedWeapon_Cooldown>
+			<Mass>35</Mass>
+		</statBases>
+		<weaponTags>
+			<li>DMS_FusionCannon</li>
+			<li>DMS_DragoonGun</li>
+		</weaponTags>
+		<recipeMaker>
+			<researchPrerequisites>
+				<li>DMS_EquipmentHeavy</li>
+				<li>HeavyTurrets</li>
+			</researchPrerequisites>
+		</recipeMaker>
+		<costList>
+			<Tungsteel>230</Tungsteel>
+			<ComponentStamped>10</ComponentStamped>
+		</costList>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>DMS_Bullet_RocketMultiLauncher</defaultProjectile>
+				<warmupTime>2</warmupTime>
+				<minRange>8</minRange>
+				<range>41.9</range>
+			    <isMortar>true</isMortar>
+				<ticksBetweenBurstShots>10</ticksBetweenBurstShots>
+				<burstShotCount>10</burstShotCount>
+				<soundCast>RocketswarmLauncher_Fire</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>25</muzzleFlashScale>
+				<consumeFuelPerShot>1</consumeFuelPerShot>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+				<ai_AvoidFriendlyFireRadius>6</ai_AvoidFriendlyFireRadius>
+				<forcedMissRadius>3</forcedMissRadius>
+			</li>
+		</verbs>
+		<modExtensions>
+			<li Class="MuzzleFlash.MuzzleFlashProps" MayRequire="IssacZhuang.MuzzleFlash">
+				<def>MF_StandardMuzzleFalsh</def>
+				<drawSize>(1.5,1.5)</drawSize>
+				<offsets>
+					<li>(0.85,0)</li>
+				</offsets>
+				<isAlternately>true</isAlternately>
+			</li>
+			<li Class="Fortified.HeavyEquippableExtension">
+				<EquippableDef>TransHeavyAutomatroid</EquippableDef>
+			</li>
+		</modExtensions>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseBullet">
+		<defName>DMS_Bullet_RocketMultiLauncher</defName>
+		<label>Rocket Multi-Launcher</label>
+		<thingClass>Projectile_Explosive</thingClass>
+		<graphicData>
+			<texPath>Things/Weapons/DMS_tank5d</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+			<drawSize>1.5</drawSize>
+		</graphicData>
+		<projectile>
+			<speed>40</speed>
+			<damageDef>Bomb</damageDef>
+			<damageAmountBase>60</damageAmountBase>
+			<armorPenetrationBase>0.35</armorPenetrationBase>
+			<stoppingPower>1.5</stoppingPower>
+			<explosionRadius>2.5</explosionRadius>
+			<soundExplode>DMS_KnuckledusterRevolver_Shot</soundExplode>
+			<arcHeightFactor>0.5</arcHeightFactor>
+			<shadowSize>0.6</shadowSize>
+		</projectile>
+	</ThingDef>		
+</Defs>

@@ -1,0 +1,132 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <!-- 同轴机枪：中口径持续火力 -->
+	<ThingDef ParentName="DMS_AutomatroidTurretGun">
+        <defName>DMS_FusionMachineGun</defName>
+        <label>Fusion Machine Gun</label>
+        <description>A high-rate-of-fire machine gun, effective for suppressive fire and eliminating infantry-class threats.</description>
+        <graphicData>
+            <texPath>Things/Weapons/DMS_tank3</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>1.5</drawSize>
+        </graphicData>
+		<statBases>
+			<AccuracyTouch>0.50</AccuracyTouch>
+			<AccuracyShort>0.70</AccuracyShort>
+			<AccuracyMedium>0.86</AccuracyMedium>
+			<AccuracyLong>0.88</AccuracyLong>
+			<RangedWeapon_Cooldown>1</RangedWeapon_Cooldown>
+		</statBases>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_DMST_LightFusionShell</defaultProjectile>
+				<warmupTime>0.5</warmupTime>
+				<range>19.9</range>
+				<ticksBetweenBurstShots>4</ticksBetweenBurstShots>
+				<burstShotCount>8</burstShotCount>
+				<soundCast>DMS_MachineGunLight_Shot</soundCast>
+				<soundCastTail>GunTail_Medium</soundCastTail>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+		<weaponTags>
+			<li>DMS_LightMachineGunMounted</li>
+		</weaponTags>
+		<modExtensions>
+			<li Class="MuzzleFlash.MuzzleFlashProps" MayRequire="IssacZhuang.MuzzleFlash">
+				<def>MF_StandardMuzzleFalsh</def>
+				<drawSize>(0.5,0.5)</drawSize>
+				<offsets>
+					<li>(0.75,0)</li>
+				</offsets>
+				<isAlternately>true</isAlternately>
+			</li>
+		</modExtensions>
+  	</ThingDef>
+
+    <!-- 双管重机枪：高射速、高伤害，近程毁灭性压制 -->
+	<ThingDef ParentName="DMS_AutomatroidTurretGun">
+        <defName>DMS_TwinFusionHeavyMachineGun</defName>
+        <label>Twin Fusion Heavy Machine Gun</label>
+        <description>A twin-barreled heavy machine gun, capable of effectively engaging a variety of lightly armored targets.</description>
+        <graphicData>
+            <texPath>Things/Weapons/DMS_tank2</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>2.5</drawSize>
+        </graphicData>
+		<statBases>
+			<AccuracyTouch>0.50</AccuracyTouch>
+			<AccuracyShort>0.70</AccuracyShort>
+			<AccuracyMedium>0.86</AccuracyMedium>
+			<AccuracyLong>0.88</AccuracyLong>
+			<RangedWeapon_Cooldown>4</RangedWeapon_Cooldown>
+		</statBases>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_DMST_HeavyFusionShell</defaultProjectile>
+				<warmupTime>4</warmupTime>
+				<range>27.9</range>
+				<ticksBetweenBurstShots>4</ticksBetweenBurstShots>
+				<burstShotCount>20</burstShotCount>
+				<soundCast>Shot_Autocannon</soundCast>
+				<soundCastTail>GunTail_Medium</soundCastTail>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+		<weaponTags>
+			<li>DMS_HeavyMachineGunMounted</li>
+		</weaponTags>
+		<modExtensions>
+			<li Class="MuzzleFlash.MuzzleFlashProps" MayRequire="IssacZhuang.MuzzleFlash">
+				<def>MF_StandardMuzzleFalsh</def>
+				<drawSize>(0.75,0.75)</drawSize>
+				<offsets>
+					<li>(0.75,0)</li>
+				</offsets>
+				<isAlternately>true</isAlternately>
+			</li>
+		</modExtensions>
+	</ThingDef>
+
+
+
+	<ThingDef ParentName="BaseBullet">
+		<defName>Bullet_DMST_HeavyFusionShell</defName>
+		<label>Heavy Fusion Shell</label>
+		<graphicData>
+			<texPath>Things/Weapons/DMS_tank2d</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(2,2)</drawSize>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>24</damageAmountBase>
+			<armorPenetrationBase>0.3</armorPenetrationBase>
+			<stoppingPower>5</stoppingPower>
+			<speed>80</speed>
+		</projectile>
+	</ThingDef>
+	
+	
+		<ThingDef ParentName="BaseBullet">
+		<defName>Bullet_DMST_LightFusionShell</defName>
+		<label>Light Fusion Shell</label>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>18</damageAmountBase>
+			<armorPenetrationBase>0.28</armorPenetrationBase>
+			<stoppingPower>2</stoppingPower>
+			<speed>80</speed>
+		</projectile>
+		<graphicData>
+			<texPath>Things/Weapons/DMS_tank3d</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(2,2)</drawSize>
+		</graphicData>
+	</ThingDef>
+</Defs>
