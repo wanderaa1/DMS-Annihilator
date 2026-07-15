@@ -27,7 +27,7 @@
 				<range>19.9</range>
 				<ticksBetweenBurstShots>4</ticksBetweenBurstShots>
 				<burstShotCount>8</burstShotCount>
-				<soundCast>DMS_MachineGunLight_Shot</soundCast>
+				<soundCast>DMSA_danguan</soundCast>
 				<soundCastTail>GunTail_Medium</soundCastTail>
 				<muzzleFlashScale>9</muzzleFlashScale>
 			</li>
@@ -68,7 +68,7 @@
 			<li>
 				<verbClass>Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
-				<defaultProjectile>Bullet_DMST_HeavyFusionShell</defaultProjectile>
+				<defaultProjectile>DMSA_shuangguan</defaultProjectile>
 				<warmupTime>4</warmupTime>
 				<range>27.9</range>
 				<ticksBetweenBurstShots>4</ticksBetweenBurstShots>

@@ -55,7 +55,7 @@
 				<range>45.9</range>
 				<ai_AvoidFriendlyFireRadius>6.9</ai_AvoidFriendlyFireRadius>
 				<burstShotCount>1</burstShotCount>
-				<soundCast>Shot_HellsphereCannonGun</soundCast>
+				<soundCast>DMSA_zupao</soundCast>
 				<soundCastTail>GunTail_Heavy</soundCastTail>
 				<muzzleFlashScale>30</muzzleFlashScale>
 				<targetParams>
@@ -155,7 +155,7 @@
 				<range>49.9</range>
 				<ticksBetweenBurstShots>4</ticksBetweenBurstShots>
 				<burstShotCount>4</burstShotCount>
-				<soundCast>DMS_Shot_Bushmaster</soundCast>
+				<soundCast>DMSA_jipao</soundCast>
 				<soundCastTail>GunTail_Heavy</soundCastTail>
 				<muzzleFlashScale>22</muzzleFlashScale>
 				<targetParams>
@@ -213,11 +213,16 @@
 			<RangedWeapon_Cooldown>6</RangedWeapon_Cooldown>
 			<Mass>35</Mass>
 		</statBases>
+		<weaponClasses>
+			<li>RangedHeavy</li>
+			<li>LongShots</li>
+			<li>Ranged</li>
+		</weaponClasses>
 		<weaponTags>
 			<li>DMS_FusionCannon</li>
-			<li>NoSwitch</li>
-			<li>DMS_MechWeaponUltraHeavy</li>
-			<li>DMS_MechWeaponTankGun</li>
+			<li>DMS_MechWeaponHeavy</li>
+			<li>A_SuppressWeaponHeavy</li>
+			<li>DMS_VehicleWeapon</li>
 		</weaponTags>
 		<recipeMaker>
 			<researchPrerequisites>
@@ -240,7 +245,7 @@
 			    <isMortar>true</isMortar>
 				<ticksBetweenBurstShots>10</ticksBetweenBurstShots>
 				<burstShotCount>10</burstShotCount>
-				<soundCast>RocketswarmLauncher_Fire</soundCast>
+				<soundCast>DMSA_huojian</soundCast>
 				<soundCastTail>GunTail_Heavy</soundCastTail>
 				<muzzleFlashScale>25</muzzleFlashScale>
 				<consumeFuelPerShot>1</consumeFuelPerShot>
@@ -276,6 +281,7 @@
 			<shaderType>TransparentPostLight</shaderType>
 			<drawSize>1.5</drawSize>
 		</graphicData>
+	    <thingClass>Projectile_Explosive</thingClass>
 		<projectile>
 			<speed>40</speed>
 			<damageDef>Bomb</damageDef>
@@ -283,7 +289,6 @@
 			<armorPenetrationBase>0.35</armorPenetrationBase>
 			<stoppingPower>1.5</stoppingPower>
 			<explosionRadius>2.5</explosionRadius>
-			<soundExplode>DMS_KnuckledusterRevolver_Shot</soundExplode>
 			<arcHeightFactor>0.5</arcHeightFactor>
 			<shadowSize>0.6</shadowSize>
 		</projectile>
