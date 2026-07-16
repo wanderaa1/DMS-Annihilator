@@ -68,12 +68,12 @@
 			<li>
 				<verbClass>Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
-				<defaultProjectile>DMSA_shuangguan</defaultProjectile>
+				<defaultProjectile>Bullet_DMST_HeavyFusionShell</defaultProjectile>
 				<warmupTime>4</warmupTime>
 				<range>27.9</range>
 				<ticksBetweenBurstShots>4</ticksBetweenBurstShots>
 				<burstShotCount>20</burstShotCount>
-				<soundCast>Shot_Autocannon</soundCast>
+				<soundCast>DMSA_shuangguan</soundCast>
 				<soundCastTail>GunTail_Medium</soundCastTail>
 				<muzzleFlashScale>9</muzzleFlashScale>
 			</li>
