@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <!-- 聚变主炮 -->
+    <SoundDef>
+        <defName>DMSA_zupao</defName>
+        <context>MapOnly</context>
+        <maxSimultaneous>1</maxSimultaneous>
+        <subSounds>
+            <li>
+                <grains>
+                    <li Class="AudioGrain_Clip">
+                        <clipPath>DMSA_zupao</clipPath>
+                    </li>
+                </grains>
+                <pitchRange>0.945882~1</pitchRange>
+                <volumeRange>40~50</volumeRange>
+            </li>
+        </subSounds>
+    </SoundDef>
+
+    <!-- 同轴机枪 -->
+    <SoundDef>
+        <defName>DMSA_danguan</defName>
+        <context>MapOnly</context>
+        <maxSimultaneous>6</maxSimultaneous>
+        <subSounds>
+            <li>
+                <grains>
+                    <li Class="AudioGrain_Clip">
+                        <clipPath>DMSA_danguan</clipPath>
+                    </li>
+                </grains>
+                <pitchRange>1.0~1.5</pitchRange>
+            </li>
+        </subSounds>
+    </SoundDef>
+
+    <!-- 多管机炮 -->
+    <SoundDef>
+        <defName>DMSA_jipao</defName>
+        <context>MapOnly</context>
+        <maxSimultaneous>6</maxSimultaneous>
+        <subSounds>
+            <li>
+                <grains>
+                    <li Class="AudioGrain_Clip">
+                        <clipPath>DMSA_jipao</clipPath>
+                    </li>
+                </grains>
+                <pitchRange>0.954118~1.045882</pitchRange>
+                <volumeRange>29~31</volumeRange>
+            </li>
+        </subSounds>
+    </SoundDef>
+
+    <!-- 火箭发射器 -->
+    <SoundDef>
+        <defName>DMSA_huojian</defName>
+        <context>MapOnly</context>
+        <maxSimultaneous>3</maxSimultaneous>
+        <subSounds>
+            <li>
+                <grains>
+                    <li Class="AudioGrain_Clip">
+                        <clipPath>DMSA_huojian</clipPath>
+                    </li>
+                </grains>
+                <pitchRange>0.9~1.05</pitchRange>
+                <volumeRange>35~45</volumeRange>
+            </li>
+        </subSounds>
+    </SoundDef>
+
+    <!-- 双管重机枪 -->
+    <SoundDef>
+        <defName>DMSA_shuangguan</defName>
+        <context>MapOnly</context>
+        <maxSimultaneous>10</maxSimultaneous>
+        <subSounds>
+            <li>
+                <grains>
+                    <li Class="AudioGrain_Clip">
+                        <clipPath>DMSA_shuangguan</clipPath>
+                    </li>
+                </grains>
+                <pitchRange>1.0~1.5</pitchRange>
+            </li>
+        </subSounds>
+    </SoundDef>
+
+</Defs>
