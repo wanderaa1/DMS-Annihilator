@@ -150,11 +150,11 @@
 				<verbClass>Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>Bullet_DMS_QuadFusionAutocannonGun</defaultProjectile>
-				<warmupTime>0.25</warmupTime>
+				<warmupTime>3.5</warmupTime>
 				<minRange>2.9</minRange>
 				<range>49.9</range>
 				<ticksBetweenBurstShots>4</ticksBetweenBurstShots>
-				<burstShotCount>4</burstShotCount>
+				<burstShotCount>40</burstShotCount>
 				<soundCast>DMSA_jipao</soundCast>
 				<soundCastTail>GunTail_Heavy</soundCastTail>
 				<muzzleFlashScale>22</muzzleFlashScale>
