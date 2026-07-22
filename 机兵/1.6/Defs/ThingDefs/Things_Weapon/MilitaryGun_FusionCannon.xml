@@ -35,7 +35,7 @@
 			</researchPrerequisites>
 		</recipeMaker>
 		<costList>
-			<Tungsteel>275</Tungsteel>
+			<Tungsteel>375</Tungsteel>
 			<ComponentStamped>30</ComponentStamped>
 		</costList>
 		<comps Inherit="False">
@@ -144,7 +144,7 @@
 			</researchPrerequisites>
 		</recipeMaker>
 		<costList>
-			<Tungsteel>230</Tungsteel>
+			<Tungsteel>330</Tungsteel>
 			<ComponentStamped>14</ComponentStamped>
 		</costList>
 		<verbs>
@@ -234,7 +234,7 @@
 			</researchPrerequisites>
 		</recipeMaker>
 		<costList>
-			<Tungsteel>230</Tungsteel>
+			<Tungsteel>330</Tungsteel>
 			<ComponentStamped>10</ComponentStamped>
 		</costList>
 		<verbs>
