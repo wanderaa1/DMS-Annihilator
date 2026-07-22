@@ -15,7 +15,7 @@
 			<texPath>Things/Weapons/DMS_tank1</texPath>
 			<drawSize>3</drawSize>
 		</graphicData>
-	    <generateCommonality>0</generateCommonality>
+	    <generateCommonality>0.01</generateCommonality>
 		<statBases>
 			<Mass>265</Mass>
 			<WorkToMake>120000</WorkToMake>
@@ -123,7 +123,7 @@
 			<li>A_SuppressWeaponHeavy</li>
 			<li>DMS_VehicleWeapon</li>
 		</weaponTags>
-		<generateCommonality>0</generateCommonality>
+		<generateCommonality>0.01</generateCommonality>
 		<soundInteract>Interact_Rifle</soundInteract>
 		<statBases>
 			<WorkToMake>90000</WorkToMake>
@@ -226,7 +226,7 @@
 			<li>A_SuppressWeaponHeavy</li>
 			<li>DMS_VehicleWeapon</li>
 		</weaponTags>
-		<generateCommonality>0</generateCommonality>
+		<generateCommonality>0.01</generateCommonality>
 		<recipeMaker>
 			<researchPrerequisites>
 				<li>DMS_EquipmentHeavy</li>
