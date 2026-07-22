@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" ?>
 
 <ModMetaData>
-    <name>湮灭坦克</name>
-    <author>湮灭</author>
+    <name>Annihilator Walker（湮灭机兵）</name>
+    <author>百色、火焰乌龟FT</author>
 	<packageId>yanmietank.tank</packageId>
 	<supportedVersions>
         <li>1.6</li>
     </supportedVersions>
-    <description>Gives the linkable buildings from the base game, biotech, and various mods more link range.</description>
+    <description>一款机器人（Automatons）提供的一种超重型机兵设计，具有相当丰沛的火力。A super-heavy mech design from the Automatons, equipped with substantial and devastating firepower.</description>
   <modDependencies>
 		<li>
 			<packageId>Aoba.DeadManSwitch.Core</packageId>
