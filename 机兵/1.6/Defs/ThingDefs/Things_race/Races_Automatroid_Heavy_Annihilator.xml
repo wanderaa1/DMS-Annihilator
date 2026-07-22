@@ -238,8 +238,9 @@
     <defName>DMS_Mech_Annihilator</defName>
     <label>Annihilator</label>
     <race>DMS_Mech_Annihilator</race>
-    <isFighter>true</isFighter>
-    <combatPower>700</combatPower>                                               <!--威脅點數-->
+    <isFighter>false</isFighter>
+    <combatPower>700</combatPower>    
+    <appearsRandomlyInCombatGroups>false</appearsRandomlyInCombatGroups>	<!--威脅點數-->
     <maxPerGroup>1</maxPerGroup>                                                 <!--單個集群內的數量-->
     <isBoss>true</isBoss>
     <lifeStages>                                                                 <!--身體圖片-->
