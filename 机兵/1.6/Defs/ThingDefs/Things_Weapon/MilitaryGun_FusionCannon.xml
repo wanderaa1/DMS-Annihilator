@@ -129,10 +129,10 @@
 			<WorkToMake>90000</WorkToMake>
 			<AccuracyTouch>0.80</AccuracyTouch>
 			<AccuracyShort>0.85</AccuracyShort>
-			<AccuracyMedium>0.88</AccuracyMedium>
-			<AccuracyLong>0.88</AccuracyLong>
+			<AccuracyMedium>0.78</AccuracyMedium>
+			<AccuracyLong>0.70</AccuracyLong>
 			<Mass>130</Mass>
-			<RangedWeapon_Cooldown>0.5</RangedWeapon_Cooldown>
+			<RangedWeapon_Cooldown>3</RangedWeapon_Cooldown>
 		</statBases>
 		<equippedStatOffsets>
 			<MoveSpeed>-0.2</MoveSpeed>
@@ -152,7 +152,7 @@
 				<verbClass>Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>Bullet_DMS_QuadFusionAutocannonGun</defaultProjectile>
-				<warmupTime>0</warmupTime>
+				<warmupTime>0.5</warmupTime>
 				<minRange>2.9</minRange>
 				<range>49.9</range>
 				<ticksBetweenBurstShots>3</ticksBetweenBurstShots>
@@ -190,7 +190,7 @@
 		</graphicData>
 		<projectile>
 			<damageDef>Bullet</damageDef>
-			<damageAmountBase>30</damageAmountBase>
+			<damageAmountBase>20</damageAmountBase>
 			<armorPenetrationBase>0.5</armorPenetrationBase>
 			<stoppingPower>5</stoppingPower>
 			<speed>80</speed>
